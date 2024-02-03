@@ -1,39 +1,37 @@
 [versions]
 accompanist = "0.32.0"
-androidDesugarJdkLibs = "2.0.3"
-androidGradlePlugin = "8.1.4"
-androidTools = "31.1.3"
+androidDesugarJdkLibs = "2.0.4"
+androidGradlePlugin = "8.2.0"
+androidTools = "31.2.0"
 androidxActivity = "1.8.0"
 androidxAppCompat = "1.6.1"
 androidxBrowser = "1.6.0"
 androidxComposeBom = "2023.10.01"
-androidxComposeCompiler = "1.5.3"
-androidxComposeRuntimeTracing = "1.0.0-alpha03"
+androidxComposeCompiler = "1.5.7"
+androidxComposeRuntimeTracing = "1.0.0-beta01"
 androidxCore = "1.12.0"
 androidxCoreSplashscreen = "1.0.1"
 androidxDataStore = "1.0.0"
 androidxEspresso = "3.5.1"
 androidxHiltNavigationCompose = "1.0.0"
-androidxJunit = "1.1.5"
 androidxLifecycle = "2.6.2"
-androidxMacroBenchmark = "1.2.0"
-androidxComposeMaterial3Adaptive = "1.0.0-alpha01"
-androidxComposeMaterial3AdaptiveNavigationSuite = "1.0.0-alpha01"
+androidxMacroBenchmark = "1.2.2"
+androidxComposeMaterial3Adaptive = "1.0.0-alpha05"
+androidxComposeMaterial3AdaptiveNavigationSuite = "1.0.0-alpha02"
 androidxMetrics = "1.0.0-alpha04"
 androidxNavigation = "2.7.4"
 androidxPaging = "1.0.0-alpha20"
 androidxProfileinstaller = "1.3.1"
 androidxSecurity = "1.1.0-alpha06"
-androidxStartup = "1.1.1"
 androidxTestCore = "1.5.0"
 androidxTestExt = "1.1.5"
 androidxTestRules = "1.5.0"
 androidxTestRunner = "1.5.2"
 androidxTracing = "1.1.0"
 androidxUiAutomator = "2.2.0"
-androidxWindowManager = "1.1.0"
-androidxWork = "2.9.0-rc01"
-coil = "2.4.0"
+androidxWindowManager = "1.2.0"
+androidxWork = "2.9.0"
+coil = "2.5.0"
 firebaseBom = "32.4.0"
 firebaseCrashlyticsPlugin = "2.9.9"
 firebasePerfPlugin = "1.4.2"
@@ -41,18 +39,15 @@ gmsPlugin = "4.4.0"
 gmsAuth = "20.7.0"
 googleOss = "17.0.1"
 googleOssPlugin = "0.10.6"
-hilt = "2.48.1"
+hilt = "2.50"
 hiltExt = "1.1.0"
 jacoco = "0.8.7"
 junit4 = "4.13.2"
-kotlin = "1.9.10"
+kotlin = "1.9.21"
 kotlinxCoroutines = "1.7.3"
-kotlinxDatetime = "0.4.1"
+kotlinxDatetime = "0.5.0"
 kotlinxSerializationJson = "1.6.0"
-ksp = "1.9.10-1.0.13"
-lint = "31.1.3"
-moshiCodegen = "1.14.0"
-moshiLazyAdapter = "2.2"
+ksp = "1.9.21-1.0.16"
 okhttp = "4.12.0"
 osm = "6.1.16"
 protobuf = "3.24.4"
@@ -61,13 +56,9 @@ retrofit = "2.9.0"
 retrofitKotlinxSerializationJson = "1.0.0"
 robolectric = "4.11.1"
 roborazzi = "1.6.0"
-room = "2.6.0"
+room = "2.6.1"
 secrets = "2.0.1"
-timber = "5.0.1"
 turbine = "1.0.0"
-org-jetbrains-kotlin-android = "1.9.10"
-junit = "1.1.5"
-material = "1.10.0"
 
 [libraries]
 accompanist-permissions = { group = "com.google.accompanist", name = "accompanist-permissions", version.ref = "accompanist" }
@@ -141,7 +132,9 @@ kotlinx-coroutines-guava = { group = "org.jetbrains.kotlinx", name = "kotlinx-co
 kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutines" }
 kotlinx-datetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "kotlinxDatetime" }
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
-lint-api = { group = "com.android.tools.lint", name = "lint-api", version.ref = "lint" }
+lint-api = { group = "com.android.tools.lint", name = "lint-api", version.ref = "androidTools" }
+lint-checks = { group = "com.android.tools.lint", name = "lint-checks", version.ref = "androidTools" }
+lint-tests = { group = "com.android.tools.lint", name = "lint-tests", version.ref = "androidTools" }
 okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
 open-street-maps = { group = "org.osmdroid", name = "osmdroid-android", version.ref = "osm" }
 protobuf-kotlin-lite = { group = "com.google.protobuf", name = "protobuf-kotlin-lite", version.ref = "protobuf" }
@@ -159,14 +152,11 @@ turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine
 # Dependencies of the included build-logic
 android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
 android-tools-common = { group = "com.android.tools", name = "common", version.ref = "androidTools" }
-androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidxJunit" }
 firebase-crashlytics-gradlePlugin = { group = "com.google.firebase", name = "firebase-crashlytics-gradle", version.ref = "firebaseCrashlyticsPlugin" }
 firebase-performance-gradlePlugin = { group = "com.google.firebase", name = "perf-plugin", version.ref = "firebasePerfPlugin" }
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
 work-testing = { group = "androidx.work", name = "work-testing", version = "2.8.1" }
-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junit" }
-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
@@ -199,4 +189,3 @@ phototime-android-lint = { id = "phototime.android.lint", version = "unspecified
 phototime-android-room = { id = "phototime.android.room", version = "unspecified" }
 phototime-android-test = { id = "phototime.android.test", version = "unspecified" }
 phototime-jvm-library = { id = "phototime.jvm.library", version = "unspecified" }
-org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
