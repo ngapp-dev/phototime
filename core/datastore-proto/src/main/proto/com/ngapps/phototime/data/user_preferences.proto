@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+import "com/ngapps/phototime/data/dark_theme_config.proto";
+
+option java_package = "com.ngapps.phototime.core.datastore";
+option java_multiple_files = true;
+
+message UserPreferences {
+    reserved 2;
+
+    int32 userResourceChangeListVersion = 1;
+    int32 locationResourceChangeListVersion = 3;
+    int32 contactResourceChangeListVersion = 4;
+    int32 shootResourceChangeListVersion = 5;
+    int32 taskResourceChangeListVersion = 6;
+    int32 moodboardResourceChangeListVersion = 7;
+    
+    bool has_done_int_to_string_id_migration = 8;
+    repeated string deprecated_completed_task_resource_ids = 9;
+
+    repeated string deprecated_user_location_lat = 10;
+    repeated string deprecated_user_location_lng = 11;
+
+    bool has_done_list_to_map_migration = 12;
+
+    // Each map is used to store a set of string IDs. The bool has no meaning, but proto3 doesn't
+    // have a Set type so this is the closest we can get to a Set.
+    map<string, string> user_location = 13;
+    map<string, bool> completed_task_resource_ids = 14;
+
+    DarkThemeConfigProto dark_theme_config = 15;
+
+    bool should_hide_onboarding = 16;
+
+    bool use_dynamic_color = 17;
+
+    // NEXT AVAILABLE ID: 18
+}

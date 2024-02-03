@@ -1,0 +1,54 @@
+{
+  "_id": "1",
+  "username": "Admin",
+  "email": "admin@gmail.com",
+  "last_login": "2022-05-04T19:19:14.299401+00:00",
+  "created": "2022-05-04T19:22:13.957418+00:00",
+  "is_active": true,
+  "audience": "PHOTOGRAPHER",
+  "token": {
+    "google": {
+      "contact": "dofaeorfjojsourhiusf",
+      "calendar": "kfosrifso;v;vso;s;vo",
+      "login": "clscaooawoacocjnvn33"
+    }
+  },
+  "devices": [
+    {
+      "name": "samsung",
+      "model": "SGH-C400",
+      "fingerprint": "c1lscaooawoacocjnvn33",
+      "fcm_token": "czlscaooawoajfcocjnvn33"
+    },
+    {
+      "name": "Samsung s20",
+      "model": "SGH-S80",
+      "fingerprint": "123v45674890",
+      "fcm_token": "clscaooawoacoasdasdcjnvn4233"
+    }
+  ],
+  "categories": {
+    "contact": [
+      "Модель",
+      "Фотограф",
+      "Подруга"
+    ],
+    "task": [
+      "Инстаграм",
+      "Дедлайн",
+      "Другое"
+    ],
+    "location": [
+      "Город",
+      "Природа",
+      "Студии"
+    ],
+    "connect_to": [
+      "phone",
+      "telegram",
+      "insta",
+      "mail",
+      "other"
+    ]
+  }
+}

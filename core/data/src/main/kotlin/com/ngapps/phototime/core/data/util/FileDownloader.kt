@@ -1,0 +1,76 @@
+/*
+ * Copyright 2024 NGApps Dev (https://github.com/ngapp-dev). All rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.ngapps.phototime.core.data.util
+
+import android.app.DownloadManager
+import android.content.Context
+import android.os.Build
+import android.os.Environment
+import android.webkit.MimeTypeMap
+import androidx.core.net.toUri
+import dagger.hilt.android.qualifiers.ApplicationContext
+import java.net.URL
+import java.net.URLDecoder
+import javax.inject.Inject
+import kotlin.math.pow
+import kotlin.random.Random
+
+class FileDownloader @Inject constructor(
+    @ApplicationContext context: Context
+) : Downloader {
+    private val downloadManager = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        context.getSystemService(DownloadManager::class.java)
+    } else {
+        TODO("VERSION.SDK_INT < M")
+    }
+
+
+    override fun downloadFile(url: String): Long {
+        val request = DownloadManager.Request(url.toUri())
+            .setMimeType(getFileTypeFromUrl(url))
+            .setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI)
+            .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+            .setTitle(getFileNameFromUrl(url))
+            .addRequestHeader("Authorization", "Bearer <token>")
+            .setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "image.jpg")
+        return downloadManager.enqueue(request)
+    }
+
+    private fun getFileTypeFromUrl(urlString: String): String? {
+        val fileExtension = MimeTypeMap.getFileExtensionFromUrl(urlString)
+        return MimeTypeMap.getSingleton().getMimeTypeFromExtension(fileExtension)
+    }
+
+    private fun getFileNameFromUrl(urlString: String): String {
+        val url = URL(urlString)
+        val path = url.path
+        val segments = path.split("/")
+        if (segments.isNotEmpty()) {
+            val lastSegment = segments.last()
+            return URLDecoder.decode("Shoot-in-time-$lastSegment", "UTF-8")
+        }
+        return "Shoot-in-time-${generateRandomNumber(10)}"
+    }
+
+    private fun generateRandomNumber(digits: Int): String {
+        require(digits > 0) { "Number of digits must be greater than 0" }
+
+        val min = 10.0.pow(digits - 1).toInt()
+        val max = 10.0.pow(digits).toInt() - 1
+        return Random.nextInt(min, max).toString()
+    }
+}

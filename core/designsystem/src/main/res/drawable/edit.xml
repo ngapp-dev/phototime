@@ -1,0 +1,25 @@
+<!--
+  ~ Copyright 2024 NGApps Dev (https://github.com/ngapp-dev). All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+  <path
+      android:pathData="M7.769,14.333C7.766,14.357 7.76,14.381 7.759,14.405L7.672,18.81C7.665,19.191 8.15,19.46 8.469,19.251L12.158,16.844C12.179,16.83 12.195,16.813 12.214,16.797C12.219,16.792 12.227,16.79 12.233,16.785C12.236,16.782 12.236,16.778 12.239,16.775C12.273,16.742 12.304,16.705 12.327,16.662L17.929,6.557C18.067,6.308 17.977,5.995 17.728,5.857L14.125,3.859C13.876,3.721 13.563,3.811 13.425,4.06L7.824,14.166C7.8,14.208 7.785,14.253 7.774,14.3C7.773,14.304 7.771,14.307 7.769,14.311C7.768,14.318 7.771,14.326 7.769,14.333ZM11.766,15.551L10.759,14.497C10.722,14.459 10.682,14.428 10.636,14.402C10.591,14.377 10.542,14.359 10.491,14.348L9.064,14.053L12.956,7.031L15.658,8.529L11.766,15.551ZM8.721,17.857L8.777,15.045L10.125,15.325L11.076,16.32L8.721,17.857ZM16.778,6.508L16.157,7.628L13.455,6.13L14.076,5.01L16.778,6.508L16.778,6.508Z"
+      android:fillColor="#0A0704"/>
+</vector>

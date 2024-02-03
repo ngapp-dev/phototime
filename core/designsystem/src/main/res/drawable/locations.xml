@@ -1,0 +1,30 @@
+<!--
+  ~ Copyright 2024 NGApps Dev (https://github.com/ngapp-dev). All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+  <path
+      android:pathData="M14.91,9.13C14.91,10.865 13.571,12.272 11.919,12.272C10.267,12.272 8.927,10.865 8.927,9.13C8.927,7.395 10.267,5.988 11.919,5.988C13.571,5.988 14.91,7.395 14.91,9.13ZM13.884,9.13C13.884,10.347 12.957,11.246 11.919,11.246C10.88,11.246 9.953,10.347 9.953,9.13C9.953,7.913 10.88,7.014 11.919,7.014C12.957,7.014 13.884,7.913 13.884,9.13Z"
+      android:fillColor="#0A0704"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M12.347,22.243C12.164,22.586 11.673,22.586 11.49,22.243L5.828,11.67C3.363,7.068 6.698,1.5 11.918,1.5C17.139,1.5 20.474,7.068 18.009,11.67L12.347,22.243ZM17.105,11.186L11.918,20.87L6.732,11.186C4.634,7.267 7.473,2.526 11.918,2.526C16.364,2.526 19.203,7.267 17.105,11.186Z"
+      android:fillColor="#0A0704"
+      android:fillType="evenOdd"/>
+</vector>

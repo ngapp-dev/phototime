@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2024 NGApps Dev (https://github.com/ngapp-dev). All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="bookmark">Bookmark</string>
+    <string name="unbookmark">Unbookmark</string>
+    <string name="back">Back</string>
+    <string name="download">Download</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="unread_resource_dot_content_description">Unread</string>
+
+    <string name="card_tap_action">Open Resource Link</string>
+    <string name="card_meta_data_text">%1$s • %2$s</string>
+    <string name="card_category_meta_data_text">Category: %s</string>
+    <string name="card_address_meta_data_text">Address: %s</string>
+
+    <string name="topic_chip_content_description_when_followed">%1$s is followed</string>
+    <string name="topic_chip_content_description_when_not_followed">%1$s is not followed</string>
+    <string name="image_title">%1$s/%2$s</string>
+
+    <string name="detach_image">Detach image</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+
+    <string name="shoot">Add shoot</string>
+    <string name="task">Add task</string>
+    <string name="cancel1">Cancel</string>
+    <string name="select_time">Select Time</string>
+    <string name="enter_time">Enter Time</string>
+    <string name="switch_to_text_input">Switch to Text Input</string>
+    <string name="switch_to_touch_input">Switch to Touch Input</string>
+    <string name="category">Category</string>
+    <string name="add_category">Add category</string>
+    <string name="edit_categories_description">Choose categories you want to edit</string>
+</resources>

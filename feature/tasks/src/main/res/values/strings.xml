@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2024 NGApps Dev (https://github.com/ngapp-dev). All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="calendar">Calendar</string>
+    <string name="task">Task</string>
+    <string name="shoot">Shoot</string>
+    <string name="add_shoot">New shoot</string>
+    <string name="add_task">New task</string>
+    <string name="back">Back</string>
+    <string name="loading">Loading data</string>
+    <string name="empty_header">"No available data"</string>
+    <string name="more">More</string>
+    <string name="tasks">Tasks</string>
+    <string name="date_time">Date and time</string>
+    <string name="note">Note</string>
+    <string name="contacts">Contacts</string>
+    <string name="moodboards">Moodboards</string>
+    <string name="locations">Locations</string>
+    <string name="notification">Notification:\u0020</string>
+    <string name="label_notification">Notification</string>
+    <string name="model">Model</string>
+    <string name="hair_style">Hair style</string>
+    <string name="makeup">Makeup</string>
+    <string name="cloth">Cloth</string>
+    <string name="phone">Phone</string>
+    <string name="instagram">Instagram</string>
+    <string name="edit_task">Edit task</string>
+    <string name="delete_task">Delete task</string>
+    <string name="edit_shoot">Edit shoot</string>
+    <string name="delete_shoot">Delete shoot</string>
+    <string name="save_shoot">Save shoot</string>
+    <string name="save_task">Save task</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="task_category">Task category</string>
+    <string name="contact_category">Contact category</string>
+    <string name="contact_communication">Communication method</string>
+    <string name="name">Name</string>
+
+    <string name="camera">Capture with camera</string>
+    <string name="gallery">Open from gallery</string>
+    <string name="date_time_exception">If a date has not been set for a shoot, it is automatically sent to the ideas tab.</string>
+</resources>

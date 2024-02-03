@@ -1,0 +1,146 @@
+[
+ {
+   "_id": "1",
+   "category": "Model",
+   "name": "Anastasia Ivanova",
+   "description": "Talented and charming Model",
+   "photos": [
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1VWQmqQu6wDswls9f_5NpEQnq4eR57g2NwzWvhKItcKtV6rb_Cyo75XSyL6vvmCIo4tzQn-8taNagEp7QG0KU1L4yMqwbYozNMzBM EFxEN2XintAhy5nLI4RQDaOXr8dgiIFdGOBMdl577Ndelzc0tDBzjI6mz7e4MF8_Tn09KWguZi6I-bS5NbJn/w1200-h630-p-k-no-nu/unnamed%20%2816%29.png",
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH63icac2kmydOI8Fs2I09KiuRA3GUo2pfZ1Wpf0M5JIEoVQ8dj9LYSl8jpxSQlmlsUVXoeXbwN4UbHMCf5p0M7FHh_EXzMeFRAJ-6feI9 -7eIyhBmtGZSD5o-MITwFLH_ESi15Cxd01AlznWaGy9WDqhK0NWtMQwiWELg3xE1I7hba-_7eVqs747V/w1200-h630-p-k-no-nu/WhasNewinPixelDevices_Social.png"
+   ],
+   "phone": "Moscow, Tverskaya st.",
+   "messenger": "54.712345"
+ },
+ {
+   "_id": "2",
+   "category": "Model",
+   "name": "Ekaterina Smirnova",
+   "description": "Mysterious and stylish girl",
+   "photos": [
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1VWQmqQu6wDswls9f_5NpEQnq4eR57g2NwzWvhKItcKtV6rb_Cyo75XSyL6vvmCIo4tzQn-8taNagEp7QG0KU1L4yMqwbYozNMzBM EFxEN2XintAhy5nLI4RQDaOXr8dgiIFdGOBMdl577Ndelzc0tDBzjI6mz7e4MF8_Tn09KWguZi6I-bS5NbJn/w1200-h630-p-k-no-nu/unnamed%20%2816%29.png",
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH63icac2kmydOI8Fs2I09KiuRA3GUo2pfZ1Wpf0M5JIEoVQ8dj9LYSl8jpxSQlmlsUVXoeXbwN4UbHMCf5p0M7FHh_EXzMeFRAJ-6feI9 -7eIyhBmtGZSD5o-MITwFLH_ESi15Cxd01AlznWaGy9WDqhK0NWtMQwiWELg3xE1I7hba-_7eVqs747V/w1200-h630-p-k-no-nu/WhasNewinPixelDevices_Social.png"
+   ],
+   "phone": "St. Petersburg, Fontanka embankment",
+   "messenger": "59.934903"
+ },
+ {
+   "_id": "3",
+   "category": "Model",
+   "name": "Alexandra Petrova",
+   "description": "Charming and elegant beauty",
+   "photos": [
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1VWQmqQu6wDswls9f_5NpEQnq4eR57g2NwzWvhKItcKtV6rb_Cyo75XSyL6vvmCIo4tzQn-8taNagEp7QG0KU1L4yMqwbYozNMzBM EFxEN2XintAhy5nLI4RQDaOXr8dgiIFdGOBMdl577Ndelzc0tDBzjI6mz7e4MF8_Tn09KWguZi6I-bS5NbJn/w1200-h630-p-k-no-nu/unnamed%20%2816%29.png",
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH63icac2kmydOI8Fs2I09KiuRA3GUo2pfZ1Wpf0M5JIEoVQ8dj9LYSl8jpxSQlmlsUVXoeXbwN4UbHMCf5p0M7FHh_EXzMeFRAJ-6feI9 -7eIyhBmtGZSD5o-MITwFLH_ESi15Cxd01AlznWaGy9WDqhK0NWtMQwiWELg3xE1I7hba-_7eVqs747V/w1200-h630-p-k-no-nu/WhasNewinPixelDevices_Social.png"
+   ],
+   "phone": "Kyiv, Khreshchatyk st.",
+   "messenger": "50.450100"
+ },
+ {
+   "_id": "4",
+   "category": "Model",
+   "name": "Olga Kovaleva",
+   "description": "Exquisite and sophisticated Model",
+   "photos": [
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1VWQmqQu6wDswls9f_5NpEQnq4eR57g2NwzWvhKItcKtV6rb_Cyo75XSyL6vvmCIo4tzQn-8taNagEp7QG0KU1L4yMqwbYozNMzBM EFxEN2XintAhy5nLI4RQDaOXr8dgiIFdGOBMdl577Ndelzc0tDBzjI6mz7e4MF8_Tn09KWguZi6I-bS5NbJn/w1200-h630-p-k-no-nu/unnamed%20%2816%29.png",
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH63icac2kmydOI8Fs2I09KiuRA3GUo2pfZ1Wpf0M5JIEoVQ8dj9LYSl8jpxSQlmlsUVXoeXbwN4UbHMCf5p0M7FHh_EXzMeFRAJ-6feI9 -7eIyhBmtGZSD5o-MITwFLH_ESi15Cxd01AlznWaGy9WDqhK0NWtMQwiWELg3xE1I7hba-_7eVqs747V/w1200-h630-p-k-no-nu/WhasNewinPixelDevices_Social.png"
+   ],
+   "phone": "Minsk, Lenin street",
+   "messenger": "53.904539"
+ },
+ {
+   "_id": "5",
+   "category": "Model",
+   "name": "Natalia Belova",
+   "description": "Charming and stylish lady",
+   "photos": [
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1VWQmqQu6wDswls9f_5NpEQnq4eR57g2NwzWvhKItcKtV6rb_Cyo75XSyL6vvmCIo4tzQn-8taNagEp7QG0KU1L4yMqwbYozNMzBM EFxEN2XintAhy5nLI4RQDaOXr8dgiIFdGOBMdl577Ndelzc0tDBzjI6mz7e4MF8_Tn09KWguZi6I-bS5NbJn/w1200-h630-p-k-no-nu/unnamed%20%2816%29.png",
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH63icac2kmydOI8Fs2I09KiuRA3GUo2pfZ1Wpf0M5JIEoVQ8dj9LYSl8jpxSQlmlsUVXoeXbwN4UbHMCf5p0M7FHh_EXzMeFRAJ-6feI9 -7eIyhBmtGZSD5o-MITwFLH_ESi15Cxd01AlznWaGy9WDqhK0NWtMQwiWELg3xE1I7hba-_7eVqs747V/w1200-h630-p-k-no-nu/WhasNewinPixelDevices_Social.png"
+   ],
+   "phone": "Kyiv, Peremogi Ave.",
+   "messenger": "50.454660"
+ },
+ {
+   "_id": "6",
+   "category": "Photographer",
+   "name": "Alina Sergeeva",
+   "description": "Stunning and vibrant personality",
+   "photos": [
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1VWQmqQu6wDswls9f_5NpEQnq4eR57g2NwzWvhKItcKtV6rb_Cyo75XSyL6vvmCIo4tzQn-8taNagEp7QG0KU1L4yMqwbYozNMzBM EFxEN2XintAhy5nLI4RQDaOXr8dgiIFdGOBMdl577Ndelzc0tDBzjI6mz7e4MF8_Tn09KWguZi6I-bS5NbJn/w1200-h630-p-k-no-nu/unnamed%20%2816%29.png",
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH63icac2kmydOI8Fs2I09KiuRA3GUo2pfZ1Wpf0M5JIEoVQ8dj9LYSl8jpxSQlmlsUVXoeXbwN4UbHMCf5p0M7FHh_EXzMeFRAJ-6feI9 -7eIyhBmtGZSD5o-MITwFLH_ESi15Cxd01AlznWaGy9WDqhK0NWtMQwiWELg3xE1I7hba-_7eVqs747V/w1200-h630-p-k-no-nu/WhasNewinPixelDevices_Social.png"
+   ],
+   "phone": "Moscow, Arbat street",
+   "messenger": "55.751244"
+ },
+ {
+   "_id": "7",
+   "category": "Photographer",
+   "name": "Elena Novikova",
+   "description": "Sophisticated and elegant girl",
+   "photos": [
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1VWQmqQu6wDswls9f_5NpEQnq4eR57g2NwzWvhKItcKtV6rb_Cyo75XSyL6vvmCIo4tzQn-8taNagEp7QG0KU1L4yMqwbYozNMzBM EFxEN2XintAhy5nLI4RQDaOXr8dgiIFdGOBMdl577Ndelzc0tDBzjI6mz7e4MF8_Tn09KWguZi6I-bS5NbJn/w1200-h630-p-k-no-nu/unnamed%20%2816%29.png",
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH63icac2kmydOI8Fs2I09KiuRA3GUo2pfZ1Wpf0M5JIEoVQ8dj9LYSl8jpxSQlmlsUVXoeXbwN4UbHMCf5p0M7FHh_EXzMeFRAJ-6feI9 -7eIyhBmtGZSD5o-MITwFLH_ESi15Cxd01AlznWaGy9WDqhK0NWtMQwiWELg3xE1I7hba-_7eVqs747V/w1200-h630-p-k-no-nu/WhasNewinPixelDevices_Social.png"
+   ],
+   "phone": "St. Petersburg, Nevsky Prospekt street",
+   "messenger": "59.939095"
+ },
+ {
+   "_id": "8",
+   "category": "Model",
+   "name": "Marina Kozlova",
+   "description": "Stylish and mysterious Model",
+   "photos": [
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1VWQmqQu6wDswls9f_5NpEQnq4eR57g2NwzWvhKItcKtV6rb_Cyo75XSyL6vvmCIo4tzQn-8taNagEp7QG0KU1L4yMqwbYozNMzBM EFxEN2XintAhy5nLI4RQDaOXr8dgiIFdGOBMdl577Ndelzc0tDBzjI6mz7e4MF8_Tn09KWguZi6I-bS5NbJn/w1200-h630-p-k-no-nu/unnamed%20%2816%29.png",
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH63icac2kmydOI8Fs2I09KiuRA3GUo2pfZ1Wpf0M5JIEoVQ8dj9LYSl8jpxSQlmlsUVXoeXbwN4UbHMCf5p0M7FHh_EXzMeFRAJ-6feI9 -7eIyhBmtGZSD5o-MITwFLH_ESi15Cxd01AlznWaGy9WDqhK0NWtMQwiWELg3xE1I7hba-_7eVqs747V/w1200-h630-p-k-no-nu/WhasNewinPixelDevices_Social.png"
+   ],
+   "phone": "Minsk, Pushkin street",
+   "messenger": "53.900739"
+ },
+ {
+   "_id": "9",
+   "category": "Model",
+   "name": "Irina Dmitrieva",
+   "description": "Exquisite and incredibly beautiful",
+   "photos": [
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1VWQmqQu6wDswls9f_5NpEQnq4eR57g2NwzWvhKItcKtV6rb_Cyo75XSyL6vvmCIo4tzQn-8taNagEp7QG0KU1L4yMqwbYozNMzBM EFxEN2XintAhy5nLI4RQDaOXr8dgiIFdGOBMdl577Ndelzc0tDBzjI6mz7e4MF8_Tn09KWguZi6I-bS5NbJn/w1200-h630-p-k-no-nu/unnamed%20%2816%29.png",
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH63icac2kmydOI8Fs2I09KiuRA3GUo2pfZ1Wpf0M5JIEoVQ8dj9LYSl8jpxSQlmlsUVXoeXbwN4UbHMCf5p0M7FHh_EXzMeFRAJ-6feI9 -7eIyhBmtGZSD5o-MITwFLH_ESi15Cxd01AlznWaGy9WDqhK0NWtMQwiWELg3xE1I7hba-_7eVqs747V/w1200-h630-p-k-no-nu/WhasNewinPixelDevices_Social.png"
+   ],
+   "phone": "Moscow, Red Square",
+   "messenger": "55.753930"
+ },
+ {
+   "_id": "10",
+   "category": "Girlfriend",
+   "name": "Oksana Lebedeva",
+   "description": "Bright and energetic personality",
+   "photos": [
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1VWQmqQu6wDswls9f_5NpEQnq4eR57g2NwzWvhKItcKtV6rb_Cyo75XSyL6vvmCIo4tzQn-8taNagEp7QG0KU1L4yMqwbYozNMzBM EFxEN2XintAhy5nLI4RQDaOXr8dgiIFdGOBMdl577Ndelzc0tDBzjI6mz7e4MF8_Tn09KWguZi6I-bS5NbJn/w1200-h630-p-k-no-nu/unnamed%20%2816%29.png",
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH63icac2kmydOI8Fs2I09KiuRA3GUo2pfZ1Wpf0M5JIEoVQ8dj9LYSl8jpxSQlmlsUVXoeXbwN4UbHMCf5p0M7FHh_EXzMeFRAJ-6feI9 -7eIyhBmtGZSD5o-MITwFLH_ESi15Cxd01AlznWaGy9WDqhK0NWtMQwiWELg3xE1I7hba-_7eVqs747V/w1200-h630-p-k-no-nu/WhasNewinPixelDevices_Social.png"
+   ],
+   "phone": "Kyiv, Lev Tolstoy street",
+   "messenger": "50.442139"
+ },
+ {
+   "_id": "11",
+   "category": "Girlfriend",
+   "name": "Anna Solovyova",
+   "description": "Model with extraordinary charm",
+   "photos": [
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1VWQmqQu6wDswls9f_5NpEQnq4eR57g2NwzWvhKItcKtV6rb_Cyo75XSyL6vvmCIo4tzQn-8taNagEp7QG0KU1L4yMqwbYozNMzBM EFxEN2XintAhy5nLI4RQDaOXr8dgiIFdGOBMdl577Ndelzc0tDBzjI6mz7e4MF8_Tn09KWguZi6I-bS5NbJn/w1200-h630-p-k-no-nu/unnamed%20%2816%29.png",
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH63icac2kmydOI8Fs2I09KiuRA3GUo2pfZ1Wpf0M5JIEoVQ8dj9LYSl8jpxSQlmlsUVXoeXbwN4UbHMCf5p0M7FHh_EXzMeFRAJ-6feI9 -7eIyhBmtGZSD5o-MITwFLH_ESi15Cxd01AlznWaGy9WDqhK0NWtMQwiWELg3xE1I7hba-_7eVqs747V/w1200-h630-p-k-no-nu/WhasNewinPixelDevices_Social.png"
+   ],
+   "phone": "St. Petersburg, Malaya Konyushennaya street",
+   "messenger": "59.935578"
+ },
+ {
+   "_id": "12",
+   "category": "Photographer",
+   "name": "Kristina Pavlova",
+   "description": "Stylish and mysterious beauty",
+   "photos": [
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1VWQmqQu6wDswls9f_5NpEQnq4eR57g2NwzWvhKItcKtV6rb_Cyo75XSyL6vvmCIo4tzQn-8taNagEp7QG0KU1L4yMqwbYozNMzBM EFxEN2XintAhy5nLI4RQDaOXr8dgiIFdGOBMdl577Ndelzc0tDBzjI6mz7e4MF8_Tn09KWguZi6I-bS5NbJn/w1200-h630-p-k-no-nu/unnamed%20%2816%29.png",
+     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH63icac2kmydOI8Fs2I09KiuRA3GUo2pfZ1Wpf0M5JIEoVQ8dj9LYSl8jpxSQlmlsUVXoeXbwN4UbHMCf5p0M7FHh_EXzMeFRAJ-6feI9 -7eIyhBmtGZSD5o-MITwFLH_ESi15Cxd01AlznWaGy9WDqhK0NWtMQwiWELg3xE1I7hba-_7eVqs747V/w1200-h630-p-k-no-nu/WhasNewinPixelDevices_Social.png"
+   ],
+   "phone": "Moscow, Kremlin",
+   "messenger": "55.751999"
+ }
+]

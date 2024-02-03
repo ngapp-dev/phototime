@@ -1,0 +1,25 @@
+<!--
+  ~ Copyright 2024 NGApps Dev (https://github.com/ngapp-dev). All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="30dp"
+    android:height="30dp"
+    android:viewportWidth="30"
+    android:viewportHeight="30">
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M27,0L3,0A3.009,3.009 0,0 0,0 3L0,27a3.009,3.009 0,0 0,3 3L27,30a3.009,3.009 0,0 0,3 -3L30,3A3.009,3.009 0,0 0,27 0ZM9,27L3,27L3,21h6ZM9,18L3,18L3,12h6ZM9,9L3,9L3,3h6ZM18,27L12,27L12,21h6ZM18,18L12,18L12,12h6ZM18,9L12,9L12,3h6ZM27,27L21,27L21,21h6ZM27,18L21,18L21,12h6ZM27,9L21,9L21,3h6Z"/>
+</vector>

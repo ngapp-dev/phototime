@@ -1,0 +1,40 @@
+<!--
+  ~ Copyright 2024 NGApps Dev (https://github.com/ngapp-dev). All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="28dp"
+    android:viewportWidth="28"
+    android:viewportHeight="28">
+  <path
+      android:pathData="M15.612,0.092C15.083,0.031 14.545,0 14,0C10.217,0 6.784,1.5 4.265,3.939C4.394,6.814 4.745,11.057 4.863,10.872C8.336,5.395 12.85,1.919 15.612,0.092Z"
+      android:fillColor="#0A0704"/>
+  <path
+      android:pathData="M0.389,17.291C0.135,16.236 0,15.134 0,14C0,10.863 1.032,7.967 2.775,5.633C2.95,8.95 3.66,14.546 6.581,20.264C6.679,20.458 2.931,18.642 0.389,17.291Z"
+      android:fillColor="#0A0704"/>
+  <path
+      android:pathData="M1.234,19.756C4.248,21.209 9.424,23.242 15.743,23.465C15.961,23.473 12.518,25.886 10.099,27.449C6.142,26.304 2.906,23.459 1.234,19.756Z"
+      android:fillColor="#0A0704"/>
+  <path
+      android:pathData="M23.887,23.912C21.354,26.438 17.86,28 14,28C13.515,28 13.036,27.975 12.564,27.927C15.31,26.078 19.802,22.562 23.233,17.048C23.348,16.862 23.731,21.04 23.887,23.912Z"
+      android:fillColor="#0A0704"/>
+  <path
+      android:pathData="M27.579,10.58C27.854,11.675 28,12.82 28,14C28,17.024 27.041,19.824 25.412,22.112C25.143,18.783 24.282,13.291 21.276,7.73C21.172,7.538 25.005,9.287 27.579,10.58Z"
+      android:fillColor="#0A0704"/>
+  <path
+      android:pathData="M17.955,0.567C21.916,1.731 25.146,4.598 26.801,8.322C23.809,6.822 18.669,4.714 12.361,4.393C12.146,4.382 15.52,2.093 17.955,0.567Z"
+      android:fillColor="#0A0704"/>
+</vector>

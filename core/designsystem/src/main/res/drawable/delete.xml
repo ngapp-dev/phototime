@@ -1,0 +1,26 @@
+<!--
+  ~ Copyright 2024 NGApps Dev (https://github.com/ngapp-dev). All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+  <path
+      android:pathData="M5.307,6.16H3.562C3.251,6.16 3,5.908 3,5.597C3,5.287 3.251,5.035 3.563,5.035H5.688C5.705,5.035 5.719,5.039 5.734,5.043L5.734,5.043C5.744,5.046 5.754,5.048 5.764,5.05C5.775,5.048 5.785,5.046 5.795,5.043L5.795,5.043L5.795,5.043C5.809,5.039 5.823,5.035 5.838,5.035H8.791V3.563C8.791,3.252 9.042,3 9.353,3H14.646C14.957,3 15.208,3.252 15.208,3.563V5.035H18.159C18.177,5.035 18.194,5.039 18.211,5.044C18.222,5.047 18.234,5.05 18.245,5.052C18.257,5.05 18.268,5.047 18.28,5.044C18.297,5.039 18.314,5.035 18.333,5.035H20.438C20.749,5.035 21,5.287 21,5.597C21,5.908 20.749,6.16 20.438,6.16H18.691L17.892,20.469C17.876,20.767 17.629,21 17.331,21H6.681C6.382,21 6.135,20.767 6.119,20.469L5.307,6.16ZM14.083,4.125H9.916V5.035H14.083V4.125ZM16.799,19.875L17.565,6.16H6.434L7.212,19.875H16.799ZM9.247,18.82C9.235,18.821 9.225,18.821 9.214,18.821C8.918,18.821 8.67,18.59 8.653,18.29L8.062,7.864C8.044,7.554 8.28,7.288 8.591,7.271C8.893,7.257 9.167,7.49 9.184,7.801L9.776,18.227C9.794,18.537 9.557,18.803 9.247,18.82ZM14.732,18.82C14.744,18.821 14.754,18.821 14.765,18.821C15.061,18.821 15.309,18.59 15.326,18.29L15.918,7.864C15.935,7.554 15.698,7.288 15.388,7.271C15.083,7.258 14.813,7.49 14.795,7.8L14.203,18.227C14.186,18.537 14.422,18.803 14.732,18.82ZM12.563,18.258C12.563,18.569 12.311,18.821 12,18.821C11.689,18.821 11.438,18.569 11.438,18.258V7.832C11.438,7.521 11.689,7.269 12,7.269C12.311,7.269 12.563,7.521 12.563,7.832V18.258Z"
+      android:fillColor="#0A0704"
+      android:fillType="evenOdd"/>
+</vector>
