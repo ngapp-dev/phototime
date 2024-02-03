@@ -23,7 +23,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.adaptive.ExperimentalMaterial3AdaptiveApi
-import androidx.compose.material3.adaptive.collectWindowSizeAsState
+import androidx.compose.material3.adaptive.currentWindowSize
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.DisposableEffect
@@ -137,7 +137,7 @@ class MainActivity : ComponentActivity() {
                     darkTheme = darkTheme,
                     disableDynamicTheming = shouldDisableDynamicTheming(uiState),
                 ) {
-                    val windowSize by collectWindowSizeAsState()
+                    val windowSize = currentWindowSize()
                     PtApp(
                         windowSize = windowSize.toDpSize(),
                         networkMonitor = networkMonitor,
