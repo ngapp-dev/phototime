@@ -35,7 +35,7 @@ the [Push-based synchronization](https://developer.android.com/topic/architectur
 </div>
 <div style="display:flex;">
 <img alt="Location screen" src="screenshots/Location%20screen.png" width="30%">
-<img alt="Location screen dark" src="screenshots/Location%20screen%20dark.png.png" width="30%">
+<img alt="Location screen dark" src="screenshots/Location%20screen%20dark.png" width="30%">
 </div>
 <div style="display:flex;">
 <img alt="Task screen" src="screenshots/Task%20screen.png" width="30%">
