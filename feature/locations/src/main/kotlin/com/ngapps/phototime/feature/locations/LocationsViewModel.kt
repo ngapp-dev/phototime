@@ -16,6 +16,7 @@
 
 package com.ngapps.phototime.feature.locations
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.ngapps.phototime.core.data.repository.locations.LocationResourceEntityQuery
@@ -93,14 +94,18 @@ private fun locationsUiState(
 
     return userStream.flatMapLatest { userResource ->
         locationsRepository.getLocationResources(
-            query = LocationResourceEntityQuery(
-                filterLocationCategories = userResource.categories.location.toSet(),
-            ),
+//            query = LocationResourceEntityQuery(
+//                filterLocationCategories = userResource.categories.location.toSet(),
+//            ),
         ).map { locationResources ->
             val categoriesWithLocations = mutableMapOf<String, List<LocationResource>>()
 
-            userResource.categories.location.forEach { category ->
-                categoriesWithLocations[category] = emptyList()
+//            userResource.categories.location.forEach { category ->
+//                categoriesWithLocations[category] = emptyList()
+//            }
+
+            locationResources.forEach { locationResource ->
+                categoriesWithLocations[locationResource.category] = emptyList()
             }
 
             locationResources.forEach { locationResource ->

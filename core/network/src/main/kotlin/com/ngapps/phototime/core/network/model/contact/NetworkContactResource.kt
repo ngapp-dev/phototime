@@ -39,8 +39,8 @@ data class NetworkContactResource(
     val category: String = "",
     val name: Name,
     val description: String = "",
-//    val photos: List<String> = emptyList(),
-    val photos: String = "",
+    val photos: List<String> = emptyList(),
+//    val photos: String = "",
     val phone: String = "",
     val messenger: String = "",
 )

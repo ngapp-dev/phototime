@@ -17,6 +17,7 @@
 package com.ngapps.phototime.core.data.repository.fake
 
 import android.content.Context
+import android.util.Log
 import com.ngapps.phototime.core.data.Synchronizer
 import com.ngapps.phototime.core.data.model.contact.asEntity
 import com.ngapps.phototime.core.data.model.contact.asNetworkModel
@@ -79,7 +80,9 @@ class FakeContactsRepository @Inject constructor(
                     }
                     .map(NetworkContactResource::asEntity)
                     .map(ContactResourceEntity::asExternalModel),
+
             )
+            Log.e("asd", "asd")
         }.flowOn(ioDispatcher)
 
     override fun getContactResource(id: String): Flow<ContactResource> =

@@ -16,6 +16,7 @@
 
 package com.ngapps.phototime
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
@@ -81,7 +82,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         val splashScreen = installSplashScreen()
         super.onCreate(savedInstanceState)
-
+        handleIntent(intent)
         var uiState: MainActivityUiState by mutableStateOf(Loading)
 
         // Update the uiState
@@ -160,6 +161,11 @@ class MainActivity : ComponentActivity() {
         lazyStats.get().isTrackingEnabled = false
     }
 
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+        handleIntent(intent)
+    }
+
     /**
      * Logs the app's Baseline Profile Compilation Status using [ProfileVerifier].
      */
@@ -191,6 +197,16 @@ class MainActivity : ComponentActivity() {
                     else -> "Profile not compiled or enqueued"
                 },
             )
+        }
+    }
+
+    private fun handleIntent(intent: Intent?) {
+        intent?.let {
+            when(intent.getStringExtra("shortcut_id")) {
+                "add_task_static" -> Log.d("handle_intent", "add_task_static")
+                "add_shoot_static" -> Log.d("handle_intent", "add_shoot_static")
+                else -> Log.d("handle_intent", "handle intent error")
+            }
         }
     }
 }

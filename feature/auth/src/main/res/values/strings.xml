@@ -28,4 +28,7 @@
     <string name="account_created_successfully">Account created successfully</string>
     <string name="please_sign_up">Hello, please sign up</string>
     <string name="please_sign_in">Hello, please sign in</string>
+
+
+    <string name="demo_sign_in">Skip sign in (Demo)</string>
 </resources>

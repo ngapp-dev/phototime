@@ -125,6 +125,5 @@ class FakeLocationsRepository @Inject constructor(
 
     }
 
-
     override suspend fun syncWith(synchronizer: Synchronizer) = true
 }
