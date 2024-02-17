@@ -47,7 +47,7 @@ interface SyncModule {
     ): SyncSubscriber
 
     @Binds
-    fun bindsUUploadInitializer(
+    fun bindsUploadInitializer(
         uploadInitializer: UploadInitializerImpl
     ): UploadInitializer
 

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright 2024 NGApps Dev (https://github.com/ngapp-dev). All rights reserved.
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,9 +21,10 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-feature android:name="android.hardware.camera.any"/>
+
+    <uses-feature android:name="android.hardware.camera.any" />
     <!--
     Firebase automatically adds the AD_ID permission, even though we don't use it. If you use this
     permission you must declare how you're using it to Google Play, otherwise the app will be
@@ -61,6 +61,11 @@
                     android:host="www.ngapps.phototime.com"
                     android:scheme="https" />
             </intent-filter>
+
+            <!-- Application shortcuts -->
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
         </activity>
         <!-- Disable Firebase analytics by default. This is overwritten for the `release` flavor -->
         <!-- TODO: Recheck -->
@@ -71,6 +76,7 @@
         <meta-data
             android:name="google_analytics_adid_collection_enabled"
             android:value="false" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"

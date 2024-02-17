@@ -33,7 +33,7 @@ import com.ngapps.phototime.core.network.SitDispatchers.IO
 import com.ngapps.phototime.core.network.UploadPtNetworkDataSource
 import com.ngapps.phototime.core.network.base.handleException
 import com.ngapps.phototime.core.network.base.handleThrowable
-import com.ngapps.phototime.core.network.fake.FakeSyncPtNetworkDataSource
+import com.ngapps.phototime.core.network.fake.FakeSyncRetrofitPtNetwork
 import com.ngapps.phototime.core.network.model.location.NetworkLocationResource
 import com.ngapps.phototime.core.network.model.location.asExternalModel
 import com.ngapps.phototime.core.result.DataResult
@@ -53,7 +53,7 @@ import javax.inject.Inject
  */
 class FakeLocationsRepository @Inject constructor(
     @Dispatcher(IO) private val ioDispatcher: CoroutineDispatcher,
-    private val datasource: FakeSyncPtNetworkDataSource,
+    private val datasource: FakeSyncRetrofitPtNetwork,
     private val uploadNetwork: UploadPtNetworkDataSource,
 ) : LocationsRepository {
 
@@ -124,7 +124,6 @@ class FakeLocationsRepository @Inject constructor(
     override suspend fun getDeleteLocationEntity(locationId: String) {
 
     }
-
 
     override suspend fun syncWith(synchronizer: Synchronizer) = true
 }

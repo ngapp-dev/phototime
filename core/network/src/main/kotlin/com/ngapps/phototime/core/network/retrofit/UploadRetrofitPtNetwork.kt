@@ -48,6 +48,7 @@ import retrofit2.http.Part
 import retrofit2.http.Path
 import retrofit2.http.Query
 import javax.inject.Inject
+import javax.inject.Singleton
 
 /**
  * Retrofit API declaration for Pt Network API
@@ -139,7 +140,7 @@ private const val SIT_BASE_URL = "${BuildConfig.BACKEND_URL}/api/"
 /**
  * [Retrofit] backed [UploadPtNetworkDataSource]
  */
-
+@Singleton
 class UploadRetrofitPtNetwork @Inject constructor(
     networkJson: Json,
     okhttpCallFactory: Call.Factory,

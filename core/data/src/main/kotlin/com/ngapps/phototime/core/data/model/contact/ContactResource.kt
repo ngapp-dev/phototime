@@ -24,7 +24,8 @@ fun NetworkContactResource.asEntity() = ContactResourceEntity(
     category = category,
     name = name.firstName,
     description = description,
-    photos = listOf(photos),
+//    photos = listOf(photos),
+    photos = photos,
     phone = phone,
     messenger = messenger,
 )

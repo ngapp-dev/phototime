@@ -63,6 +63,7 @@ class SignInViewModel @Inject constructor(
     fun triggerAction(action: SignInAction) = when (action) {
         is SignInAction.SignIn -> doSignIn(action.signInResourceQuery)
         is SignInAction.GoogleSignIn -> doGoogleSignIn(action.googleToken)
+        is SignInAction.SignInDemo -> doSignInDemo()
     }
 
     private fun doSignIn(signInResourceQuery: SignInResourceQuery) {
@@ -104,6 +105,10 @@ class SignInViewModel @Inject constructor(
             )
         }
     }
+
+    private fun doSignInDemo() {
+        _signInUiState.value = SignInUiState.Success
+    }
 }
 
 sealed interface SignInUiState {
@@ -119,4 +124,5 @@ sealed class SignInViewEvent {
 sealed interface SignInAction {
     data class SignIn(val signInResourceQuery: SignInResourceQuery) : SignInAction
     data class GoogleSignIn(val googleToken: String) : SignInAction
+    data object SignInDemo : SignInAction
 }

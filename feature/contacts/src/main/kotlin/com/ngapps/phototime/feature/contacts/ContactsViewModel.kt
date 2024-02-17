@@ -18,13 +18,13 @@ package com.ngapps.phototime.feature.contacts
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.ngapps.phototime.core.data.repository.UserDataRepository
 import com.ngapps.phototime.core.data.repository.contacts.ContactResourceEntityQuery
 import com.ngapps.phototime.core.data.repository.contacts.ContactsRepository
 import com.ngapps.phototime.core.data.repository.user.UserRepository
 import com.ngapps.phototime.core.data.util.SyncManager
 import com.ngapps.phototime.core.domain.contacts.GetDeleteContactUseCase
 import com.ngapps.phototime.core.model.data.contact.ContactResource
+import com.ngapps.phototime.core.model.data.user.UserResource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableSharedFlow
@@ -37,12 +37,10 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
-import com.ngapps.phototime.core.result.Result
 
 @HiltViewModel
 class ContactsViewModel @Inject constructor(
     syncManager: SyncManager,
-    userDataRepository: UserDataRepository,
     userRepository: UserRepository,
     contactsRepository: ContactsRepository,
     private val getDeleteContact: GetDeleteContactUseCase,
@@ -56,7 +54,6 @@ class ContactsViewModel @Inject constructor(
         )
 
     val contactsUiState: StateFlow<ContactsUiState> = contactsUiState(
-        userDataRepository = userDataRepository,
         userRepository = userRepository,
         contactsRepository = contactsRepository,
     )
@@ -89,24 +86,25 @@ class ContactsViewModel @Inject constructor(
 }
 
 private fun contactsUiState(
-    userDataRepository: UserDataRepository,
     userRepository: UserRepository,
     contactsRepository: ContactsRepository,
 ): Flow<Map<String, List<ContactResource>>> {
-//    val userStream: Flow<UserResource> = userRepository.getUserResource()
-    val contactCategories = contactsRepository.getContactResourcesUniqueCategories()
+    val userStream: Flow<UserResource> = userRepository.getUserResource()
 
-    return contactCategories.flatMapLatest { categories ->
+    return userStream.flatMapLatest { userResource ->
         contactsRepository.getContactResources(
-            query = ContactResourceEntityQuery(
+//            query = ContactResourceEntityQuery(
 //                filterContactCategories = userResource.categories.contact.toSet(),
-                filterContactCategories = categories.toSet(),
-            ),
+//            ),
         ).map { contactResources ->
             val categoriesWithContacts = mutableMapOf<String, List<ContactResource>>()
 
-            categories.forEach { category ->
-                categoriesWithContacts[category] = emptyList()
+//            userResource.categories.contact.forEach { category ->
+//                categoriesWithContacts[category] = emptyList()
+//            }
+
+            contactResources.forEach { contactResource ->
+                categoriesWithContacts[contactResource.category] = emptyList()
             }
 
             contactResources.forEach { contactResource ->

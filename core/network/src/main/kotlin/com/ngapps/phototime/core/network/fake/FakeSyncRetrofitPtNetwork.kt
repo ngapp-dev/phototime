@@ -39,7 +39,7 @@ import javax.inject.Inject
 /**
  * [SyncPtNetworkDataSource] implementation that provides static news resources to aid development
  */
-class FakeSyncPtNetworkDataSource @Inject constructor(
+class FakeSyncRetrofitPtNetwork @Inject constructor(
     @Dispatcher(IO) private val ioDispatcher: CoroutineDispatcher,
     private val networkJson: Json,
     private val assets: FakeAssetManager = JvmUnitTestFakeAssetManager,

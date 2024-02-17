@@ -17,7 +17,9 @@
 package com.ngapps.phototime.sync.di
 
 import com.ngapps.phototime.core.data.util.SyncManager
+import com.ngapps.phototime.sync.initializers.UploadInitializer
 import com.ngapps.phototime.sync.status.StubSyncSubscriber
+import com.ngapps.phototime.sync.status.StubUploadInitializer
 import com.ngapps.phototime.sync.status.SyncSubscriber
 import com.ngapps.phototime.sync.status.WorkManagerSyncManager
 import dagger.Binds
@@ -38,4 +40,9 @@ interface SyncModule {
     fun bindsSyncSubscriber(
         syncSubscriber: StubSyncSubscriber,
     ): SyncSubscriber
+
+    @Binds
+    fun bindsUploadInitializer(
+        uploadInitializer: StubUploadInitializer,
+    ): UploadInitializer
 }

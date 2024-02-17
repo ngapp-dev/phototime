@@ -28,7 +28,7 @@ import java.util.Objects
 
 fun Context.getFileProviderUri(): Uri {
     val timeStamp = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(Date())
-    val imageFileName = "SIT_$timeStamp"
+    val imageFileName = "PT_$timeStamp"
     val file =  File.createTempFile(
         imageFileName,
         ".jpg",

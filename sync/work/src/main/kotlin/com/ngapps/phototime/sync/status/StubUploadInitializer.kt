@@ -14,19 +14,20 @@
  * limitations under the License.
  */
 
-package com.ngapps.phototime.core.data.model.location
+package com.ngapps.phototime.sync.status
 
-import com.ngapps.phototime.core.database.model.locations.LocationResourceEntity
-import com.ngapps.phototime.core.network.model.location.NetworkLocationResource
+import android.util.Log
+import com.ngapps.phototime.sync.initializers.UploadInitializer
+import javax.inject.Inject
 
-fun NetworkLocationResource.asEntity() = LocationResourceEntity(
-    id = id,
-    category = category,
-    title = title,
-    description = description,
-//    photos = listOf(photos),
-    photos = photos,
-    address = address,
-    lat = lat,
-    lng = lng,
-)
+private const val TAG = "StubUploadInitializer"
+
+/**
+ * Stub implementation of [UploadInitializer]
+ */
+class StubUploadInitializer @Inject constructor() : UploadInitializer {
+
+    override fun initialize(id: String?, photos: List<String>) {
+        Log.d(TAG, "initializing to upload")
+    }
+}

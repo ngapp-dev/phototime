@@ -76,8 +76,8 @@ internal fun SignInRoute(
     onSignInSuccess: () -> Unit,
     onShowSnackbar: suspend (String, String?) -> Boolean,
 ) {
-    val googleSignInClient by remember { viewModel.googleSignInClient }
     val signInUiState: SignInUiState by viewModel.signInUiState.collectAsStateWithLifecycle()
+    val googleSignInClient by remember { viewModel.googleSignInClient }
 
     LaunchedEffect(viewModel.viewEvents) {
         viewModel.viewEvents.collectLatest { event ->
@@ -90,11 +90,12 @@ internal fun SignInRoute(
     SignInScreen(
         signInUiState = signInUiState,
         googleSignInClient = googleSignInClient,
-        modifier = modifier,
         onSignInActionClick = { viewModel.triggerAction(SignInAction.SignIn(it)) },
         onGoogleSignInCompleted = { viewModel.triggerAction(SignInAction.GoogleSignIn(it)) },
         onSignInSuccess = onSignInSuccess,
         onSignUpClick = onSignUpClick,
+        onSignInDemoClick = { viewModel.triggerAction(SignInAction.SignInDemo) },
+        modifier = modifier,
     )
 }
 
@@ -108,10 +109,9 @@ internal fun SignInScreen(
     onGoogleSignInCompleted: (String) -> Unit,
     onSignInSuccess: () -> Unit,
     onSignUpClick: () -> Unit,
+    onSignInDemoClick: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
-
-
     Column(Modifier.fillMaxSize()) {
         PtTopAppBar(
             titleRes = R.string.title_sign_in,
@@ -150,18 +150,18 @@ internal fun SignInScreen(
                 }
 
                 is SignInUiState.Error -> {
-
+                    SignInContent(
+                        modifier = modifier,
+                        enabled = true,
+                        googleSignInClient = googleSignInClient,
+                        onSignInActionClick = onSignInActionClick,
+                        onSignUpClick = onSignUpClick,
+                        onSignInDemoClick = onSignInDemoClick,
+                        onGoogleSignInCompleted = onGoogleSignInCompleted,
+                        onGoogleSignInError = {},
+                    )
                 }
             }
-            SignInContent(
-                modifier = modifier,
-                enabled = true,
-                googleSignInClient = googleSignInClient,
-                onSignInActionClick = onSignInActionClick,
-                onSignUpClick = onSignUpClick,
-                onGoogleSignInCompleted = onGoogleSignInCompleted,
-                onGoogleSignInError = {},
-            )
         }
     }
 
@@ -176,6 +176,7 @@ internal fun SignInContent(
     googleSignInClient: GoogleSignInClient,
     onSignInActionClick: (SignInResourceQuery) -> Unit,
     onSignUpClick: () -> Unit,
+    onSignInDemoClick: () -> Unit,
     onGoogleSignInCompleted: (String) -> Unit,
     onGoogleSignInError: () -> Unit
 ) {
@@ -237,9 +238,16 @@ internal fun SignInContent(
         PtTextButton(
             modifier = Modifier.fillMaxWidth(),
             enabled = enabled,
-            onClick = { onSignUpClick.invoke() },
+            onClick = { onSignUpClick() },
         ) {
             Text(text = stringResource(id = R.string.sign_up))
+        }
+        PtTextButton(
+            modifier = Modifier.fillMaxWidth(),
+            enabled = enabled,
+            onClick = { onSignInDemoClick() },
+        ) {
+            Text(text = stringResource(id = R.string.demo_sign_in))
         }
     }
 }

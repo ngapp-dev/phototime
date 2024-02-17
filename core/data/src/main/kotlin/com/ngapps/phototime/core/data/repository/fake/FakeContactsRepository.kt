@@ -17,6 +17,7 @@
 package com.ngapps.phototime.core.data.repository.fake
 
 import android.content.Context
+import android.util.Log
 import com.ngapps.phototime.core.data.Synchronizer
 import com.ngapps.phototime.core.data.model.contact.asEntity
 import com.ngapps.phototime.core.data.model.contact.asNetworkModel
@@ -33,7 +34,7 @@ import com.ngapps.phototime.core.network.SitDispatchers.IO
 import com.ngapps.phototime.core.network.UploadPtNetworkDataSource
 import com.ngapps.phototime.core.network.base.handleException
 import com.ngapps.phototime.core.network.base.handleThrowable
-import com.ngapps.phototime.core.network.fake.FakeSyncPtNetworkDataSource
+import com.ngapps.phototime.core.network.fake.FakeSyncRetrofitPtNetwork
 import com.ngapps.phototime.core.network.model.contact.NetworkContactResource
 import com.ngapps.phototime.core.result.DataResult
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -53,7 +54,7 @@ import javax.inject.Inject
  */
 class FakeContactsRepository @Inject constructor(
     @Dispatcher(IO) private val ioDispatcher: CoroutineDispatcher,
-    private val datasource: FakeSyncPtNetworkDataSource,
+    private val datasource: FakeSyncRetrofitPtNetwork,
     private val uploadNetwork: UploadPtNetworkDataSource,
     @ApplicationContext private val context: Context,
 ) : ContactsRepository {
@@ -79,7 +80,9 @@ class FakeContactsRepository @Inject constructor(
                     }
                     .map(NetworkContactResource::asEntity)
                     .map(ContactResourceEntity::asExternalModel),
+
             )
+            Log.e("asd", "asd")
         }.flowOn(ioDispatcher)
 
     override fun getContactResource(id: String): Flow<ContactResource> =
