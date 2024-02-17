@@ -28,7 +28,7 @@ import com.ngapps.phototime.core.network.Dispatcher
 import com.ngapps.phototime.core.network.SitDispatchers.IO
 import com.ngapps.phototime.core.network.UploadPtNetworkDataSource
 import com.ngapps.phototime.core.network.base.handleException
-import com.ngapps.phototime.core.network.fake.FakeSyncPtNetworkDataSource
+import com.ngapps.phototime.core.network.fake.FakeSyncRetrofitPtNetwork
 import com.ngapps.phototime.core.result.DataResult
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
@@ -45,7 +45,7 @@ import javax.inject.Inject
  */
 class FakeUserRepository @Inject constructor(
     @Dispatcher(IO) private val ioDispatcher: CoroutineDispatcher,
-    private val datasource: FakeSyncPtNetworkDataSource,
+    private val datasource: FakeSyncRetrofitPtNetwork,
     private val uploadNetwork: UploadPtNetworkDataSource,
 ) : UserRepository {
 

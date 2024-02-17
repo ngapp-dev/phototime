@@ -93,7 +93,7 @@ class EditLocationViewModel @Inject constructor(
     val selectedImageUris: StateFlow<List<String>> = _selectedImageUris
 
 
-    private val _searchQueryChannel = MutableStateFlow<String>("")
+    private val _searchQueryChannel = MutableStateFlow("")
 
     private val _viewEvents = MutableSharedFlow<EditLocationViewEvent>()
     val viewEvents: SharedFlow<EditLocationViewEvent> = _viewEvents.asSharedFlow()

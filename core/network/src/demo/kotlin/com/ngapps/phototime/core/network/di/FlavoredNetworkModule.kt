@@ -17,7 +17,9 @@
 package com.ngapps.phototime.core.network.di
 
 import com.ngapps.phototime.core.network.SyncPtNetworkDataSource
-import com.ngapps.phototime.core.network.fake.FakeSyncPtNetworkDataSource
+import com.ngapps.phototime.core.network.UploadPtNetworkDataSource
+import com.ngapps.phototime.core.network.fake.FakeSyncRetrofitPtNetwork
+import com.ngapps.phototime.core.network.fake.FakeUploadRetrofitPtNetwork
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -28,5 +30,8 @@ import dagger.hilt.components.SingletonComponent
 interface FlavoredNetworkModule {
 
     @Binds
-    fun binds(impl: FakeSyncPtNetworkDataSource): SyncPtNetworkDataSource
+    fun bindsSyncRetrofitPtNetwork(impl: FakeSyncRetrofitPtNetwork): SyncPtNetworkDataSource
+
+    @Binds
+    fun bindsUploadRetrofitPtNetwork(impl: FakeUploadRetrofitPtNetwork): UploadPtNetworkDataSource
 }
