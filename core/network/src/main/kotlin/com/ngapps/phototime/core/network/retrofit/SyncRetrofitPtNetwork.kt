@@ -111,12 +111,14 @@ private const val SIT_BASE_URL = "${BuildConfig.BACKEND_URL}/api/"
 @Singleton
 class SyncRetrofitPtNetwork @Inject constructor(
     networkJson: Json,
-    okhttpCallFactory: Call.Factory,
+    okhttpCallFactory: dagger.Lazy<Call.Factory>,
 ) : SyncPtNetworkDataSource {
     private val networkApi = Retrofit.Builder()
         .baseUrl(SIT_BASE_URL)
-        .callFactory(okhttpCallFactory)
-        .addConverterFactory(networkJson.asConverterFactory("application/json".toMediaType()))
+        .callFactory { okhttpCallFactory.get().newCall(it) }
+        .addConverterFactory(
+            networkJson.asConverterFactory("application/json".toMediaType()),
+        )
         .build()
         .create(SyncSitNetworkApi::class.java)
 
